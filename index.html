@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proposal</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Proposal</h1>
+  <label for="name">What's your name?</label>
+  <input type="text" id="name" placeholder="Enter your name">
+  <button onclick="checkName()">Submit</button>
+  <div id="loveQuestion" class="hidden">
+    <p>How much do you love me, Delbu?</p>
+    <select id="loveLevel">
+      <option value="0">0</option>
+      <option value="10">10</option>
+      <option value="100">100</option>
+      <option value="1000">1000</option>
+      <option value="infinity">Infinity</option>
+    </select>
+    <button onclick="showResult()">Submit</button>
+  </div>
+  <div id="result" class="hidden">
+    <p id="message"></p>
+    <p id="loveResponse"></p>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
